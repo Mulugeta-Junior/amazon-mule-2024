@@ -13,12 +13,12 @@ function Routing() {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
-      <Route path="/Auth" element={<Auth />} />
+      <Route path="/auth" element={<Auth />} />
       <Route path="/Payment" element={<Payment />} />
       <Route path="/Order" element={<Order />} />
       <Route path="/category/:categoryName" element={<Result />} />
       <Route path="/products/:productId" element={<Productdetail />} />
-      <Route path="/Cart" element={<Cart />} />
+      <Route path="/cart" element={<Cart />} />
       {/* Catch-all route for unmatched paths */}
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>

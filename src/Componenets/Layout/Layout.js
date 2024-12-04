@@ -1,8 +1,7 @@
-import React from 'react'
-import Header from '../../Componenets/Header/Header';
+import React from "react";
+import Header from "../Headerr/Header";
 
-
-function Layout({children}) {
+function Layout({ children }) {
   return (
     <div>
       <Header />
