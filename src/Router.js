@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom'
 import Payment from "./pages/Payment/Payment";
 import Order from "./pages/order/Order";
 import Cart from "./pages/Cart/Cart";
@@ -19,6 +19,8 @@ function Routing() {
       <Route path="/category/:categoryName" element={<Result />} />
       <Route path="/products/:productId" element={<Productdetail />} />
       <Route path="/Cart" element={<Cart />} />
+      {/* Catch-all route for unmatched paths */}
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 }
